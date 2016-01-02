@@ -79,12 +79,6 @@
                           the interesection of databases and distributed systems. I completed my PhD under the supervision
                           of <a href="http://www.doc.ic.ac.uk/~prp/home.html" target="_blank">Dr. Peter Pietzuch</a> at
                           Imperial College London.
-<!--I am a 3rd year PhD student of Computer Science at Imperial College London under the supervision
-of <a href="http://www.doc.ic.ac.uk/~prp/home.html" target="_blank">Dr. Peter Pietzuch</a>.
-My research interests are on the <b>intersection of systems and database research</b>. Currently,
-I am working on stateful big data processing, where we try to understand how stateful applications
-can run efficiently in parallel data processing platforms, maintaining scalability, fault tolerance
-and providing a natural way of expressing computation.</p>-->
 <a class="control-btn fui-arrow-down" href="#publications"> </a>
                     </div>
                 </div>
@@ -157,7 +151,28 @@ and providing a natural way of expressing computation.</p>-->
                                     <h4 class="two-lines">SABER: Window-Based Hybrid Stream Processing for Heterogeneous Architectures
 
                                     </h4>
-                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+                                    <div><a href="#" title="Modern servers have become heterogeneous, often combining
+                                      multi-core CPUs with many-core GPGPUs. Such heterogeneous architectures have
+                                      the potential to improve the performance of data-intensive stream processing
+                                      applications, but they are not supported by current relational stream
+                                      processing engines. For an engine to exploit a heterogeneous architecture, it
+                                      must execute streaming SQL queries with sufficient data-parallelism to fully
+                                      utilise all available heterogeneous processors, and decide how to use each
+                                      in the most effective way. It must do this while respecting the semantics of
+                                      streaming SQL queries, in particular with regard to window handling.
+
+                                      We describe SABER, a hybrid high-performance relational stream processing engine
+                                      for CPUs and GPGPUs. SABER executes window-based streaming SQL queries in a
+                                      data-parallel fashion using all
+                                      available CPU and GPGPU cores. Instead of statically assigning query operators
+                                      to heterogeneous processors, SABER employs a new adaptive heterogeneous
+                                      lookahead scheduling strategy, which increases the share of queries executing
+                                      on the processor that yields the highest performance. To hide data movement
+                                      costs, SABER pipelines the transfer of stream data between different memory
+                                      types and the CPU/GPGPU. Our experimental comparison against state-of-the-art
+                                      engines shows that SABER increases processing throughput while maintaining low
+                                      latency for a wide range of streaming SQL queries with small and large windows
+                                      sizes." class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
 
                                 </div>
                                 <div class="authors">Alexandros Koliousis, Matthias Weidlich, Raul Castro Fernandez, Paolo Costa, Alexander Wolf, Peter Pietzuch</div>
@@ -174,12 +189,32 @@ and providing a natural way of expressing computation.</p>-->
                                     <h4 class="two-lines">Java2SDG: Stateful Big Data Processing for the Masses
 
                                     </h4>
-                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+                                    <div><a href="#" title="Big data processing is no longer only done by
+                                      specially-trained engineers. Instead, domain experts, data scientists
+                                      and data users all want to benefit from applying data mining and machine
+                                      learning algorithms at scale. A major obstacle towards this “democratisation
+                                      of big data” are programming models: current, scalable big data processing
+                                      platforms such as Spark, Naiad and Flink require users to learn custom
+                                      functional or declarative programming models, which differ fundamentally
+                                      from popular languages such as Java, Matlab, Python or C++. An open challenge
+                                      is how to provide a big data programming model that users are familiar with,
+                                      while maintaining desirable properties such as performance, scalability and
+                                      fault tolerance.
+
+                                      We demonstrate JAVA2SDG, a compiler that translates annotated Java programs
+                                      to stateful dataflow graphs (SDG) that can execute on a cluster in a
+                                      data-parallel and fault-tolerant fashion. Compared to existing distributed
+                                      dataflow models, a distinguishing feature of SDGs is that their computational
+                                      tasks can access distributed mutable state, thus allowing SDGs to capture the
+                                      semantics of stateful Java programs. As part of the demonstration, we provide
+                                      examples of machine learning programs in Java, including collaborative
+                                      filtering and logistic regression, and we explain how they are translated to
+                                      SDGs and executed on a cluster."
+                                      class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                                 </div>
                                 <div class="authors">Raul Castro Fernandez, Panagiotis Garefalakis, Peter Pietzuch.</div>
                                  <div class="description">
                                     <p>32nd IEEE International Conference on Data Engineering, 05/2016, Helsinki, Finland</p>
-
                                     <h6 class="place">ICDE</h6>
                                 </div>
                             </div>
@@ -199,7 +234,23 @@ and providing a natural way of expressing computation.</p>-->
                                     <h4 class="two-lines">Liquid: Unifying Nearline and Offline Big Data Integration
 
                                     </h4>
-                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+                                    <div><a href="#" title="With more sophisticated data-parallel processing systems,
+                                      the new bottleneck in data-intensive companies shifts from the back-end data
+                                      systems to the data integration stack, which is responsible for the pre-processing
+                                       of data for back-end applications. The use of back-end data systems with
+                                       different access latencies and data integration requirements poses new
+                                       challenges that current data integration stacks based on distributed file
+                                       systems—proposed a decade ago for batch-oriented processing—cannot address.
+
+                                       In this paper, we describe Liquid, a data integration stack that provides low
+                                       latency data access to support near real-time in addition to batch
+                                       applications. It supports incremental processing, and is cost-efficient and
+                                       highly available. Liquid has two layers: a processing layer based on a stateful
+                                       stream processing model, and a messaging layer with a highly-available
+                                       publish/subscribe system. We report our experience of a Liquid deployment
+                                       with backend data systems at LinkedIn, a data-intensive company with over
+                                       300 million users."
+                                       class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
 
                                 </div>
                                 <div class="authors">Raul Castro Fernandez, Peter Pietzuch, Joel Koshy, Jay Kreps, Dong Lin, Neha Narkhede, Jun Rao, Chris Riccomini, Guozhang Wang.</div>
@@ -216,7 +267,27 @@ and providing a natural way of expressing computation.</p>-->
                                     <h4 class="two-lines">Making State Explicit for Imperative Big Data Processing
 
                                     </h4>
-                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+                                    <div><a href="#" title="Data scientists often implement machine learning
+                                      algorithms in imperative languages such as Java, Matlab and R. Yet such
+                                      implementations fail to achieve the performance and scalability of
+                                      specialised data-parallel processing frameworks. Our goal is to execute
+                                      imperative Java programs in a data-parallel fashion with high throughput
+                                      and low latency. This raises two challenges: how to support the arbitrary
+                                      mutable state of Java programs without compromising scalability, and how
+                                      to recover that state after failure with low overhead.
+
+                                      Our idea is to infer the dataflow and the types of state accesses from a Java
+                                      program and use this information to generate a stateful dataflow graph (SDG).
+                                      By explicitly separating data from mutable state, SDGs have specific
+                                      features to enable this translation: to ensure scalability, distributed
+                                      state can be partitioned across nodes if computation can occur entirely in
+                                      parallel; if this is not possible, partial state gives nodes local instances
+                                      for independent computation, which are reconciled according to application
+                                      semantics. For fault tolerance, large in-memory state is checkpointed
+                                      asynchronously without global coordination. We show that the performance of
+                                      SDGs for several imperative online applications matches that of existing
+                                      data-parallel processing frameworks."
+                                      class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                                 </div>
                                 <div class="authors">Raul Castro Fernandez, Matteo Migliavacca, Evangelia Kalyvianaki and Peter Pietzuch.</div>
                                  <div class="description">
@@ -232,7 +303,21 @@ and providing a natural way of expressing computation.</p>-->
                                     <h4 class="two-lines">Grand Challenge Scalable Stateful Stream Processing for Smart Grids
 
                                     </h4>
-                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+                                    <div><a href="#" title="We describe a solution to the ACM DEBS Grand Challenge
+                                      2014, which evaluates event-based systems for smart grid analytics. Our solution
+                                      follows the paradigm of stateful data stream processing and is implemented on
+                                      top of the SEEP stream processing platform. It achieves high scalability by
+                                      massive data-parallel processing and the option of performing semantic
+                                      load-shedding. In addition, our solution is fault-tolerant, ensuring that the
+                                      large processing state of stream operators is not lost after failure.
+
+                                      Our experimental results show that our solution processes 1 month worth of
+                                      data for 40 houses in 4 hours. When we scale out the system, the time reduces
+                                      linearly to 30 minutes before the system bottlenecks at the data source. We
+                                      then apply semantic load-shedding, maintaining a low median prediction error
+                                      and reducing the time further to 17 minutes. The system achieves these results
+                                      with median latencies below 30 ms and a 90th percentile below 50 ms."
+                                      class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
 
                                 </div>
                                 <div class="authors">Raul Castro Fernandez, Matthias Weidlich, Peter Pietzuch and Avigdor Gal.</div>
@@ -258,7 +343,30 @@ and providing a natural way of expressing computation.</p>-->
                                     <h4 class="three-lines">Integrating Scale Out and Fault Tolerance in Stream Processing using Operator State Management
 
                                     </h4>
-                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+                                    <div><a href="#" title="As users of “big data” applications expect fresh results,
+                                      we witness a new breed of stream processing systems (SPS) that are designed
+                                      to scale to large numbers of cloud-hosted machines. Such systems face new
+                                      challenges: (i) to benefit from the “pay-as-you-go” model of cloud computing,
+                                      they must scale out on demand, acquiring additional virtual machines (VMs)
+                                      and parallelising operators when the workload increases; (ii) failures are
+                                      common with deployments on hundreds of VMs—systems must be fault-tolerant
+                                      with fast recovery times, yet low per-machine overheads. An open question
+                                       is how to achieve these two goals when stream queries include stateful
+                                       operators, which must be scaled out and recovered without affecting query
+                                       results.
+
+                                       Our key idea is to expose internal operator state explicitly to the SPS
+                                       through a set of state management primitives. Based on them, we describe
+                                       an integrated approach for dynamic scale out and recovery of stateful
+                                       operators. Externalised operator state is checkpointed periodically by the
+                                       SPS and backed up to upstream VMs. The SPS identifies individual operator
+                                       bottlenecks and automatically scales them out by allocating new VMs and
+                                       partitioning the checkpointed state. At any point, failed operators are
+                                       recovered by restoring checkpointed state on a new VM and replaying
+                                       unprocessed tuples. We evaluate this approach with the Linear Road Benchmark
+                                       on the Amazon EC2 cloud platform and show that it can scale automatically to
+                                       a load factor of L=350 with 50 VMs, while recovering quickly from failures."
+                                       class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                                 </div>
                                 <div class="authors">Raul Castro Fernandez, Matteo Migliavacca, Evangelia Kalyvianaki and Peter Pietzuch.</div>
                                  <div class="description">
@@ -274,7 +382,7 @@ and providing a natural way of expressing computation.</p>-->
                                     <h4 class="three-lines">Towards Low-Latency and In-Memory Large-Scale Data Processing
 
                                     </h4>
-                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+                                    <div><a href="#" title="Not available" class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                                 </div>
                                 <div class="authors">Raul Castro Fernandez and Peter Pietzuch.</div>
                                  <div class="description">
@@ -350,7 +458,9 @@ and providing a natural way of expressing computation.</p>-->
                             <div class="plan award">
                                 <div class="block-title blue">
                                   <h4 class="two-lines">Stateful Data-Parallel Processing</h4>
-                                  <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+                                  <div><a href="#" title="In this project we explore the benefits of putting
+                                    state back into the traditional stateless dataflow graphs of data-parallel processing
+                                    systems---that facilitate achieving scalability and fault tolerance." class="tooltip">Summary &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                                 </div>
                             </div>
                         </div>
@@ -358,7 +468,9 @@ and providing a natural way of expressing computation.</p>-->
                             <div class="plan award">
                                 <div class="block-title green">
                                     <h4 class="two-lines">Data Discovery</h4>
-                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+                                    <div><a href="#" title="With the increasing variety of data available, the big data problem shifts
+                                      towards discovering those datasets that are relevant to answer the question at hand. In this project
+                                      we are exploring approaches to tackle this problem." class="tooltip">Summary &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                                 </div>
                             </div>
                         </div>
@@ -366,7 +478,7 @@ and providing a natural way of expressing computation.</p>-->
                             <div class="plan award">
                                 <div class="block-title blue">
                                     <h4 class="two-lines">Locality-Sensitive Parallel Processing</h4>
-                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Summary &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                                 </div>
                             </div>
                         </div>
@@ -379,7 +491,7 @@ and providing a natural way of expressing computation.</p>-->
                             <div class="plan award">
                                 <div class="block-title green">
                                     <h4 class="three-lines">Metadataflows</h4>
-                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Summary &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                                 </div>
                             </div>
                         </div>
@@ -387,7 +499,7 @@ and providing a natural way of expressing computation.</p>-->
                 </div>
             </section>
 
-            <section id="experience" class="price-1">
+            <section id="experience" class="price-1 bg-clouds">
 
                     <!-- header-21 -->
                 <header class="header-21">
@@ -446,21 +558,36 @@ and providing a natural way of expressing computation.</p>-->
                           <div class="plan award">
                               <div class="block-title green">
                                   <h4 class="two-lines">MIT: Postdoctoral Associate</h4>
+                                  <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Summary &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                               </div>
+                              <div class="description">
+                                 <p>Period: October 2015 - Current</p>
+                                 <h6 class="place">Cambridge, MA, USA</h6>
+                             </div>
                           </div>
                       </div>
                         <div class="col-sm-4">
                             <div class="plan award">
                                 <div class="block-title green">
                                     <h4 class="two-lines">Microsoft Research: Research Intern</h4>
+                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Summary &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                                 </div>
+                                <div class="description">
+                                   <p>Period: July 2015 - September 2015</p>
+                                   <h6 class="place">Redmond, WA, USA</h6>
+                               </div>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="plan award">
                                 <div class="block-title blue">
                                     <h4 class="two-lines">Imperial College London: PhD student</h4>
+                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Summary &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                                 </div>
+                                <div class="description">
+                                   <p>Period: October 2011 - September 2015</p>
+                                   <h6 class="place">London, UK</h6>
+                               </div>
                             </div>
                         </div>
 
@@ -472,14 +599,24 @@ and providing a natural way of expressing computation.</p>-->
                             <div class="plan award">
                                 <div class="block-title green">
                                     <h4 class="three-lines">LinkedIn: Software Engineer Intern</h4>
+                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Summary &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                                 </div>
+                                <div class="description">
+                                   <p>Period: June 2014 - August 2014</p>
+                                   <h6 class="place">Mountain View, CA, USA</h6>
+                               </div>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="plan award">
                                 <div class="block-title green">
                                     <h4 class="three-lines">UC3M: Researcher at FP7 Project</h4>
+                                    <div><a href="#" title="Tooltip de ejemplo" class="tooltip">Summary &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
                                 </div>
+                                <div class="description">
+                                   <p>Period: September 2009 - September 2011 2014</p>
+                                   <h6 class="place">Madrid, Spain</h6>
+                               </div>
                             </div>
                         </div>
                     </div>
@@ -588,7 +725,7 @@ and providing a natural way of expressing computation.</p>-->
             </div>
             <div class="col-sm-7">
               <div class="additional-links">
-                Contact me through LinkedIn or e-mail me at <a href="#">raulcf@csail.mit.edu</a>.
+                Contact me through LinkedIn or e-mail me at <a href="#">raulcf@csail.mit.edu</a>
               </div>
             </div>
             <div class="col-sm-3">
