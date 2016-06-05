@@ -28,10 +28,10 @@
                         <div class="collapse navbar-collapse">
                             <ul class="nav">
                                 <li>
-                                    <a href="#awards">PROJECTS</a>
+                                    <a href="#publications">PUBLICATIONS</a>
                                 </li>
                                 <li>
-                                    <a href="#publications">PUBLICATIONS</a>
+                                    <a href="#awards">PROJECTS</a>
                                 </li>
                                 <li>
                                     <a href="#experience">EXPERIENCE</a>
@@ -102,10 +102,10 @@
                             <div class="collapse navbar-collapse">
                                 <ul class="nav">
                                     <li>
-                                      <a href="#awards">PROJECTS</a>
+                                      <a class="selected">PUBLICATIONS</a>
                                     </li>
                                     <li>
-                                      <a class="selected">PUBLICATIONS</a>
+                                      <a href="#awards">PROJECTS</a>
                                     </li>
                                     <li>
                                         <a href="#others">EXPERIENCE</a>
@@ -144,9 +144,50 @@
                     <h3 class="title">My publications</h3>
 
                     <div class="row dates">
-                        <div class="col-sm-8 border-date"> <h5 class="date">2016</h5> </div>
+                        <div class="col-sm-12 border-date"> <h5 class="date">2016</h5> </div>
                     </div>
                     <div class="row plans">
+
+                        <div class="col-sm-4">
+                            <div class="plan">
+                                <div class="block-title blue">
+                                    <h4 class="two-lines">Towards Large-Scale Data Discovery
+
+                                    </h4>
+                                    <div><a href="#" title="Modern servers have become heterogeneous, often combining
+                                      multi-core CPUs with many-core GPGPUs. Such heterogeneous architectures have
+                                      the potential to improve the performance of data-intensive stream processing
+                                      applications, but they are not supported by current relational stream
+                                      processing engines. For an engine to exploit a heterogeneous architecture, it
+                                      must execute streaming SQL queries with sufficient data-parallelism to fully
+                                      utilise all available heterogeneous processors, and decide how to use each
+                                      in the most effective way. It must do this while respecting the semantics of
+                                      streaming SQL queries, in particular with regard to window handling.
+
+                                      We describe SABER, a hybrid high-performance relational stream processing engine
+                                      for CPUs and GPGPUs. SABER executes window-based streaming SQL queries in a
+                                      data-parallel fashion using all
+                                      available CPU and GPGPU cores. Instead of statically assigning query operators
+                                      to heterogeneous processors, SABER employs a new adaptive heterogeneous
+                                      lookahead scheduling strategy, which increases the share of queries executing
+                                      on the processor that yields the highest performance. To hide data movement
+                                      costs, SABER pipelines the transfer of stream data between different memory
+                                      types and the CPU/GPGPU. Our experimental comparison against state-of-the-art
+                                      engines shows that SABER increases processing throughput while maintaining low
+                                      latency for a wide range of streaming SQL queries with small and large windows
+                                      sizes." class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+
+                                </div>
+                                <div class="authors">Raul Castro Fernandez, Ziawasch Abedjan, Samuel Madden, 
+                                Michael Stonebraker
+                                </div>
+                                 <div class="description">
+                                    <p>ExploreDB Workshop collocated with ACM SIGMOD, 06/2016, San Francisco, CA.</p>
+
+                                    <h6 class="place">ExploreDB@SIGMOD</h6>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="col-sm-4">
                             <div class="plan">
@@ -414,10 +455,10 @@
                             <div class="collapse navbar-collapse">
                                 <ul class="nav">
                                   <li>
-                                      <a href="#awards">PROJECTS</a>
+                                      <a href="#publications">PUBLICATIONS</a>
                                   </li>
                                   <li>
-                                      <a href="#publications">PUBLICATIONS</a>
+                                      <a href="#awards">PROJECTS</a>
                                   </li>
                                   <li>
                                       <a href="#experience">EXPERIENCE</a>
@@ -455,61 +496,71 @@
                     <h3 class="title">Projects</h3>
 
                     <div class="row">
-                        <div class="col-sm-7 col-sm-offset-5">
-                            <h6 class="title-green">Data Discovery</h6>
-                            <p>
-                                contxt helps you to debate about news with people you care. Sometimes
-                                because of your professional activities you need to stay constantly
-                                informed; your performance depends on it. contxt extracts news from
-                                feeds, social networks (LinkedIn, Twitter) and then curates it and
-                                offers in a mobile app. You can then start private conversations about
-                                those pieces of news that are more interesting. With this platform we
-                                try to relax the information overload problem we live today. By
-                                trusting in your friends, contxt helps you to stay up to date without effort.
-                            </p>
-                            <p></p>
-                            <p></p>
-                            <h6 class="title-blue m-top-50">Topology-Aware Dataflows</h6>
-                            <p>
-                                I co-founded this company (Ecana Sistemas de Informacion SL) to help
-                                wineries improve their production processes. Ecana acquires data from
-                                sensors deployed in wineyards, weather stations and human-provided
-                                knowledge. We then transform that data into valuable information to
-                                humans and finally we visualise the information in dashboards. The
-                                goal was to keep winemakers up to date as to what is going on in their
-                                winery and alert them when important events occur such as rising probability
-                                of freezing or disease.
-                            </p>
-                            <p></p>
-                            <p></p>
-                            <h6 class="title-blue m-top-50">Metadataflows</h6>
-                            <p>
-                                I co-founded this company (Ecana Sistemas de Informacion SL) to help
-                                wineries improve their production processes. Ecana acquires data from
-                                sensors deployed in wineyards, weather stations and human-provided
-                                knowledge. We then transform that data into valuable information to
-                                humans and finally we visualise the information in dashboards. The
-                                goal was to keep winemakers up to date as to what is going on in their
-                                winery and alert them when important events occur such as rising probability
-                                of freezing or disease.
-                            </p>
-                            <p></p>
-                            <p></p>
-                            <h6 class="title-blue m-top-50">Stateful Data-Parallel Processing</h6>
-                            <p>
-                                I co-founded this company (Ecana Sistemas de Informacion SL) to help
-                                wineries improve their production processes. Ecana acquires data from
-                                sensors deployed in wineyards, weather stations and human-provided
-                                knowledge. We then transform that data into valuable information to
-                                humans and finally we visualise the information in dashboards. The
-                                goal was to keep winemakers up to date as to what is going on in their
-                                winery and alert them when important events occur such as rising probability
-                                of freezing or disease.
-                            </p>
-
+                        <div class="col-sm-6">
+                          <h6 class="title-green">Data Discovery</h6>
+                          <p>
+                            contxt helps you to debate about news with people you care. Sometimes
+                            because of your professional activities you need to stay constantly
+                            informed; your performance depends on it. contxt extracts news from
+                            feeds, social networks (LinkedIn, Twitter) and then curates it and
+                            offers in a mobile app. You can then start private conversations about
+                            those pieces of news that are more interesting. With this platform we
+                            try to relax the information overload problem we live today. By
+                            trusting in your friends, contxt helps you to stay up to date without effort.
+                          </p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <div class="col-sm-6">
+                          <h6 class="title-green">Topology-Aware Dataflows</h6>
+                          <p>
+                            contxt helps you to debate about news with people you care. Sometimes
+                            because of your professional activities you need to stay constantly
+                            informed; your performance depends on it. contxt extracts news from
+                            feeds, social networks (LinkedIn, Twitter) and then curates it and
+                            offers in a mobile app. You can then start private conversations about
+                            those pieces of news that are more interesting. With this platform we
+                            try to relax the information overload problem we live today. By
+                            trusting in your friends, contxt helps you to stay up to date without effort.
+                          </p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                          <h6 class="title-green">Metadataflows</h6>
+                          <p>
+                            contxt helps you to debate about news with people you care. Sometimes
+                            because of your professional activities you need to stay constantly
+                            informed; your performance depends on it. contxt extracts news from
+                            feeds, social networks (LinkedIn, Twitter) and then curates it and
+                            offers in a mobile app. You can then start private conversations about
+                            those pieces of news that are more interesting. With this platform we
+                            try to relax the information overload problem we live today. By
+                            trusting in your friends, contxt helps you to stay up to date without effort.
+                          </p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <div class="col-sm-6">
+                          <h6 class="title-green">Stateful Data-Parallel Processing</h6>
+                          <p>
+                            contxt helps you to debate about news with people you care. Sometimes
+                            because of your professional activities you need to stay constantly
+                            informed; your performance depends on it. contxt extracts news from
+                            feeds, social networks (LinkedIn, Twitter) and then curates it and
+                            offers in a mobile app. You can then start private conversations about
+                            those pieces of news that are more interesting. With this platform we
+                            try to relax the information overload problem we live today. By
+                            trusting in your friends, contxt helps you to stay up to date without effort.
+                          </p>
+                          <p></p>
+                          <p></p>
                         </div>
                     </div>
                 </div>
+              </div>
             </section>
 
             <section id="experience" class="price-1 bg-clouds">
@@ -524,10 +575,10 @@
                             <div class="collapse navbar-collapse">
                                 <ul class="nav">
                                   <li>
-                                      <a href="#awards">PROJECTS</a>
+                                      <a href="#publications">PUBLICATIONS</a>
                                   </li>
                                   <li>
-                                      <a href="#publications">PUBLICATIONS</a>
+                                      <a href="#awards">PROJECTS</a>
                                   </li>
                                   <li>
                                       <a href="#experience">EXPERIENCE</a>
@@ -648,10 +699,10 @@
                             <div class="collapse navbar-collapse">
                                 <ul class="nav">
                                   <li>
-                                      <a href="#awards">PROJECTS</a>
+                                      <a href="#publications">PUBLICATIONS</a>
                                   </li>
                                   <li>
-                                      <a href="#publications">PUBLICATIONS</a>
+                                      <a href="#awards">PROJECTS</a>
                                   </li>
                                   <li>
                                       <a href="#experience">EXPERIENCE</a>
@@ -760,10 +811,10 @@
           <nav>
             <ul>
               <li>
-                  <a href="#awards">PROJECTS</a>
+                  <a href="#publications">PUBLICATIONS</a>
               </li>
               <li>
-                  <a href="#publications">PUBLICATIONS</a>
+                  <a href="#awards">PROJECTS</a>
               </li>
               <li>
                   <a href="#experience">EXPERIENCE</a>
@@ -785,11 +836,9 @@
             </a>
             <a href="#">
               <div class="fui-twitter"></div>
-
             </a>
           </div>
           </nav>
-
         </div>
       </footer>
 
