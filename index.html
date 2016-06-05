@@ -72,15 +72,16 @@
                         <img class="hl" src="img/raul-picture@2x.png" width="100" height="100"  alt=""> Raul Castro Fernandez
                       </h3>
                       <p class="lead">
-                        Postdoctoral Researcher at MIT. Computer Science
+                        Postdoctoral Associate. MIT, CSAIL
                       </p>
 
                       <p class="entry">
-                          I am interested in problems that arise from either a lack of raw data processing capacity,
-                          or a lack of good abstractions to manipulate data to extract value. My research lies at
-                          the interesection of databases and distributed systems. I completed my PhD under the supervision
-                          of <a href="http://www.doc.ic.ac.uk/~prp/home.html" target="_blank">Dr. Peter Pietzuch</a> at
-                          Imperial College London.
+                        The data revolution is here. For this revolution to be beneficial for our society our capacity to explore and understand data must match our capacity to generate it. Today, we generate more data than we know how to comprehend, and the gap is growing larger.
+
+                        In my research I work on practical problems towards bridging the gap. I like designing and building systems to solve practical problems, and therefore my research interests lie at the intersection of databases, systems and distributed systems.
+                        
+                        At MIT I work with professors Sam Madden and Mike Stonebraker. Before, I completed my PhD at Imperial College London under the supervision of Peter Pietzuch.
+                        <!--<a href="http://www.doc.ic.ac.uk/~prp/home.html" target="_blank">Peter Pietzuch</a>.-->
                       </p>
                       <a class="control-btn fui-arrow-down" href="#publications"> </a>
                     </div>
@@ -154,28 +155,8 @@
                                     <h4 class="two-lines">Towards Large-Scale Data Discovery
 
                                     </h4>
-                                    <div><a href="#" title="Modern servers have become heterogeneous, often combining
-                                      multi-core CPUs with many-core GPGPUs. Such heterogeneous architectures have
-                                      the potential to improve the performance of data-intensive stream processing
-                                      applications, but they are not supported by current relational stream
-                                      processing engines. For an engine to exploit a heterogeneous architecture, it
-                                      must execute streaming SQL queries with sufficient data-parallelism to fully
-                                      utilise all available heterogeneous processors, and decide how to use each
-                                      in the most effective way. It must do this while respecting the semantics of
-                                      streaming SQL queries, in particular with regard to window handling.
-
-                                      We describe SABER, a hybrid high-performance relational stream processing engine
-                                      for CPUs and GPGPUs. SABER executes window-based streaming SQL queries in a
-                                      data-parallel fashion using all
-                                      available CPU and GPGPU cores. Instead of statically assigning query operators
-                                      to heterogeneous processors, SABER employs a new adaptive heterogeneous
-                                      lookahead scheduling strategy, which increases the share of queries executing
-                                      on the processor that yields the highest performance. To hide data movement
-                                      costs, SABER pipelines the transfer of stream data between different memory
-                                      types and the CPU/GPGPU. Our experimental comparison against state-of-the-art
-                                      engines shows that SABER increases processing throughput while maintaining low
-                                      latency for a wide range of streaming SQL queries with small and large windows
-                                      sizes." class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+                                    <div><a href="#" title="With thousands of data sources spread across multiple databases and data lakes, modern organizations face a data discovery challenge. Analysts spend more time finding relevant data to answer the questions at hand than analyzing it.
+                                    In this paper we introduce a data discovery system that facilitates locating relevant data among thousands of data sources. We represent data sources succinctly through signatures, and then create search paths that permit quick execution of a set of data discovery primitives used for finding relevant data. We have built a prototype that is being used to solve data discovery challenges of two big organizations." class="tooltip">Abstract &nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
 
                                 </div>
                                 <div class="authors">Raul Castro Fernandez, Ziawasch Abedjan, Samuel Madden, 
@@ -499,14 +480,7 @@
                         <div class="col-sm-6">
                           <h6 class="title-green">Data Discovery</h6>
                           <p>
-                            contxt helps you to debate about news with people you care. Sometimes
-                            because of your professional activities you need to stay constantly
-                            informed; your performance depends on it. contxt extracts news from
-                            feeds, social networks (LinkedIn, Twitter) and then curates it and
-                            offers in a mobile app. You can then start private conversations about
-                            those pieces of news that are more interesting. With this platform we
-                            try to relax the information overload problem we live today. By
-                            trusting in your friends, contxt helps you to stay up to date without effort.
+                            Data is stored everywhere: in relational databases, files and hundreds of different data sources. These data sources contain valuable information and insights that can benefit multiple aspects of modern organizations. However, as more data is produced, our ability to use it reduces dramatically, as no single person in the organization knows about all the existent data sources. One big challenge is to discover the data sources that are relevant to answer a particular question. We are building Aurum, a data discovery system to answer "discovery queries" on large volumes of data.
                           </p>
                           <p></p>
                           <p></p>
@@ -514,14 +488,7 @@
                         <div class="col-sm-6">
                           <h6 class="title-green">Topology-Aware Dataflows</h6>
                           <p>
-                            contxt helps you to debate about news with people you care. Sometimes
-                            because of your professional activities you need to stay constantly
-                            informed; your performance depends on it. contxt extracts news from
-                            feeds, social networks (LinkedIn, Twitter) and then curates it and
-                            offers in a mobile app. You can then start private conversations about
-                            those pieces of news that are more interesting. With this platform we
-                            try to relax the information overload problem we live today. By
-                            trusting in your friends, contxt helps you to stay up to date without effort.
+                            The dataflow abstraction implemented as part of large-scale data processing engines has reduced the processing times required to run analytical queries over large volumes of data, while permitting users to write their algorithms in a high-level language. However, there is a large number of applications that require both data- and task-parallelism--such as complex physical and biological simulations. These applications are typically expressed as SPMD programs, that intertwine algorithm logic and topology information, producing hard to understand and error-prone code. We are exploring a new abstraction to bring the benefits of dataflows to HPC-like programs.
                           </p>
                           <p></p>
                           <p></p>
@@ -531,14 +498,7 @@
                         <div class="col-sm-6">
                           <h6 class="title-green">Metadataflows</h6>
                           <p>
-                            contxt helps you to debate about news with people you care. Sometimes
-                            because of your professional activities you need to stay constantly
-                            informed; your performance depends on it. contxt extracts news from
-                            feeds, social networks (LinkedIn, Twitter) and then curates it and
-                            offers in a mobile app. You can then start private conversations about
-                            those pieces of news that are more interesting. With this platform we
-                            try to relax the information overload problem we live today. By
-                            trusting in your friends, contxt helps you to stay up to date without effort.
+                            Some applications, such as machine learning ones, require fine-tuning a set of parameters such as learning rate, smoothing factor or even the type of trainer to use. For each one of these exploratory queries, we can create multiple parametrized versions. We know how to run one of them efficiently and at scale in clusters. However, developers spend most of the time orcestrating the execution of all the parametrized versions. We introduce metadataflows to permit developers to express exploratory queries and to permit a system to exploit characteristics that permit more efficient execution, such as sharing of intermediate results, avoiding redundant computation and using more sophisticated memory managmeent mechanisms.
                           </p>
                           <p></p>
                           <p></p>
@@ -546,14 +506,7 @@
                         <div class="col-sm-6">
                           <h6 class="title-green">Stateful Data-Parallel Processing</h6>
                           <p>
-                            contxt helps you to debate about news with people you care. Sometimes
-                            because of your professional activities you need to stay constantly
-                            informed; your performance depends on it. contxt extracts news from
-                            feeds, social networks (LinkedIn, Twitter) and then curates it and
-                            offers in a mobile app. You can then start private conversations about
-                            those pieces of news that are more interesting. With this platform we
-                            try to relax the information overload problem we live today. By
-                            trusting in your friends, contxt helps you to stay up to date without effort.
+                            Large-scale data processing systems depend on stateless dataflows to extract data parallelims and execute the programs with fault tolerance. Many applications that require explicit access to state cannot be executed efficiently in such systems. Stateful data-parallel processing permits to execute stateful programs efficiently and still keeping the data parallelism and fault tolerance properties of traditional dataflow systems. In addition, with state in the applications we can translate imperative programs into stateful dataflow graphs, that can execute on a stateful data-parallel processing system.
                           </p>
                           <p></p>
                           <p></p>
