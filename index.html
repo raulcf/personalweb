@@ -490,7 +490,7 @@ Pietzuch</a>.-->
                         <div class="col-sm-6">
                           <h6 class="title-green">Data Discovery</h6>
                           <p>
-                            Data is stored everywhere: in relational databases, files and hundreds of different data sources. These data sources contain valuable information and insights that can benefit multiple aspects of modern organizations. However, as more data is produced, our ability to use it reduces dramatically, as no single person in the organization knows about all the existent data sources. One big challenge is to discover the data sources that are relevant to answer a particular question. We are building Aurum, a data discovery system to answer "discovery queries" on large volumes of data.
+                            Data is stored everywhere: in relational databases, files and hundreds of different data sources. These data sources contain valuable information and insights that can be beneficial to multiple aspects of modern data-driven organizations. However, as more data is produced, our ability to use it reduces dramatically, as no single person in the organization knows about all the existent data sources and so they are lost in the crowd. One big challenge is to discover the data sources that are relevant to answer a particular question. We are building Aurum, a data discovery system to answer "discovery queries" on large volumes of data.
                           </p>
                           <p></p>
                           <p></p>
@@ -498,7 +498,7 @@ Pietzuch</a>.-->
                         <div class="col-sm-6">
                           <h6 class="title-green">Topology-Aware Dataflows</h6>
                           <p>
-                            The dataflow abstraction implemented as part of large-scale data processing engines has reduced the processing times required to run analytical queries over large volumes of data, while permitting users to write their algorithms in a high-level language. However, there is a large number of applications that require both data- and task-parallelism--such as complex physical and biological simulations. These applications are typically expressed as SPMD programs, that intertwine algorithm logic and topology information, producing hard to understand and error-prone code. We are exploring a new abstraction to bring the benefits of dataflows to HPC-like programs.
+                            The dataflow abstraction implemented as part of large-scale data processing engines has reduced the processing times required to run analytical queries over large volumes of data by exploiting data parallelism, while permitting users to write their algorithms in a high-level language. However, there is a large number of applications that require both data- and task-parallelism--such as complex physical and biological simulations that depend on linear algebra operations. These applications are typically expressed as SPMD programs that intertwine algorithm logic and topology information. This produces hard to understand and error-prone code. We are exploring a new abstraction to bring the benefits of dataflows to HPC-like programs.
                           </p>
                           <p></p>
                           <p></p>
@@ -508,8 +508,19 @@ Pietzuch</a>.-->
                         <div class="col-sm-6">
                           <h6 class="title-green">Metadataflows</h6>
                           <p>
-                            Some applications, such as machine learning ones, require fine-tuning a set of parameters such as learning rate, smoothing factor or even the type of trainer to use. For each one of these exploratory queries, we can create multiple parametrized versions. We know how to run one of them efficiently and at scale in clusters. However, developers spend most of the time orcestrating the execution of all the parametrized versions. We introduce metadataflows to permit developers to express exploratory queries and to permit a system to exploit characteristics that permit more efficient execution, such as sharing of intermediate results, avoiding redundant computation and using more sophisticated memory managmeent mechanisms.
-                          </p>
+			Some applications require both input data and
+fine-tuning a set of parameters---such as learning rate, smoothing factor and
+optimizer type for machine learning applications---to produce results: we call
+these applications exploratory queries. Users spend long times orchestrating
+the different parameters they want to try, which is time-consuming and resource
+inefficient: each instantiation becomes a dataflow representation that executes
+in a dataflow system. Instead, we propose metadataflows as a new dataflow
+abstraction for users to represent exploratory queries succcintly.
+Metadataflows permit to exploit characteristics that allow us to execute these
+kind of queries more efficiently, such as performing sharing of intermediate
+results, avoiding redundant computation and using more sophisticated memory
+management mechanisms.  
+			</p>
                           <p></p>
                           <p></p>
                         </div>
@@ -714,14 +725,15 @@ Pietzuch</a>.-->
                         <div class="col-sm-7 col-sm-offset-5">
                             <h6 class="title-green">contxt.in</h6>
                             <p>
-                                contxt helps you to discuss news with people you care about. Sometimes
-                                because of your professional activities you need to stay constantly
-                                informed; your performance depends on it. contxt extracts news from
-                                feeds, social networks (LinkedIn, Twitter) and then curates it and
-                                offers in a mobile app. You can then start private conversations about
-                                those pieces of news that are more interesting. With this platform we
-                                try to relax the information overload problem we live today. By
-                                trusting in your friends, contxt helps you to stay up to date without effort.
+				contxt helps you to discuss news with people
+you care about. Information overload means that we do not have time to process
+the seemingly infinite streams of news we receive every day. contxt helps to
+tame this overload by curating news from the many different data sources that
+interest you (Facebook, Twitter, LinkedIn, feeds, etc.) and offering them as
+concise summaries. You can then start private conversations about those pieces
+of news that are more interesting with people you want.  By curating multiple
+sources of news and trusting your friends, contxt helps you to stay up to data
+without effort.
                             </p>
                             <p></p>
                             <p></p>
