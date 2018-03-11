@@ -154,6 +154,138 @@ Pietzuch</a>.-->
                 <div class="container">
                     <h3 class="title">Publications</h3>
 
+                <div class="row dates">
+                    <div class="col-sm-12 border-date"> <h5 class="date">2018</h5> </div>
+                </div>
+                <div class="row plans">
+
+                        <div class="col-sm-4">
+                            <div class="plan">
+                                <div class="block-title blue">
+                                    <h4 class="two-lines">Quill: Efficient,
+Transferable, and Rich Analytics at Scale
+                                    </h4>
+                                    <div><a href="#" title="This paper
+introduces Quill (stands for a quadrillion tuples per day), a library and
+distributed platform for relational and temporal analytics over large datasets
+in the cloud. Quill exposes a new abstraction for parallel datasets and
+computation, called ShardedStreamable. This abstraction provides the ability to
+express efficient distributed physical query plans that are transferable, i.e.,
+movable from offline to real-time and vice versa. ShardedStreamable decouples
+incremental query logic specification, a small but rich set of data movement
+operations, and keying; this allows Quill to express a broad space of plans with
+complex querying functionality, while leveraging existing temporal libraries
+such as Trill. Quill’s loosely-coupled layered architecture provides a careful
+split of responsibilities with independently useful components, while
+retaining high performance. We built Quill for the cloud, with a master-less
+design where a language-integrated client library directly communicates and
+coordinates with cloud workers using off-the-shelf distributed cloud components
+such as queues. Experiments on up to 40 high-end cloud machines, on benchmark
+and real datasets up to 1TB, find Quill to outperform SparkSQL by up to
+orders-of-magnitude for temporal and 6× for relational queries, while supporting
+a rich space of transferable, programmable, and expressive distributed physical
+query plans." class="tooltip">Abstract
+&nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+
+                                </div>
+                                <div class="authors">Badrish Chandramouli,
+Raul Castro Fernandez, Jonathan Goldstein, Ahmed Eldawy, Abdul Quamar
+                                </div>
+                                <div class="description"> 
+                                <p>
+                                43rd International Conference on Very Large
+DataBases (VLDB), 09/2017, Munich, Germany
+                                </p>
+
+                                    <h6 class="place">VLDB</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="plan">
+                                <div class="block-title green">
+                                    <h4 class="two-lines">Ako: Decentralised
+Deep Learning with Partial Gradient Exchange
+                                    </h4>
+                                    <div><a href="#" title="Distributed systems
+for training deep neural networks (DNNs) with large amounts of data have vastly
+improved the accuracy of machine learning models for image and speech
+recognition. DNN systems scale to large cluster deployments by having worker
+nodes train many model replicas in parallel; to ensure model convergence,
+parameter servers periodically synchronise the replicas. This raises the
+challenge of how to split resources between workers and parameter servers so
+that the cluster CPU and network resources are fully utilised without
+introducing bottlenecks. In practice, this requires manual tuning for each model
+configuration or hardware type.  We describe Ako, a decentralised dataflow-based
+DNN system without parameter servers that is designed to saturate cluster
+resources. All nodes execute workers that fully use the CPU resources to update
+model replicas. To synchronise replicas as often as possible subject to the
+available network bandwidth, workers exchange partitioned gradient updates
+directly with each other. The number of partitions is chosen so that the used
+network bandwidth remains constant, independently of cluster size. Since workers
+eventually receive all gradient partitions after several rounds, convergence is
+unaffected. For the ImageNet benchmark on a 64-node cluster, Ako does not
+require any resource allocation decisions, yet converges faster than deployments
+with parameter servers." class="tooltip">Abstract
+&nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+
+                                </div>
+                                <div class="authors">Pijika Watcharapichat,
+Victoria Lopez Morales, Raul Castro Fernandez, Peter Pietzuch
+                                </div>
+                                 <div class="description"> <p>ACM Symposium on
+Cloud Computing (SOCC) 10/2016, Santa Clara, CA.</p>
+
+                                    <h6 class="place">SOCC</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="plan">
+                                <div class="block-title blue">
+                                    <h4 class="two-lines">Detecting Data Errors:
+Where are we and what needs to be done?
+                                    </h4>
+                                    <div><a href="#" title="Data cleaning has
+played a critical role in ensuring data quality for enterprise applications.
+Naturally, there has been extensive research in this area, and many data
+cleaning algorithms have been translated into tools to detect and to possibly repair certain classes of errors such as outliers, duplicates, missing
+values, and violations of integrity constraints. Since different types of errors
+may coexist in the same data set, we often need to run more than one kind of
+tool. In this paper, we investigate two pragmatic questions: (1) are these tools
+robust enough to capture most errors in real-world data sets? and (2) what is
+the best strategy to holistically run multiple tools to optimize the detection
+effort? To answer these two questions, we obtained multiple data cleaning tools
+that utilize a variety of error detection techniques. We also collected five
+real-world data sets, for which we could obtain both the raw data and the ground
+truth on existing errors. In this paper, we report our experimental findings on
+the errors detected by the tools we tested. First, we show that the coverage of
+each tool is well below 100%. Second, we show that the order in which multiple
+tools are run makes a big difference. Hence, we propose a holistic multi-tool
+strategy that orders the invocations of the available tools to maximize their
+benefit, while minimizing human effort in verifying results. Third, since this
+holistic approach still does not lead to acceptable error coverage, we discuss
+two simple strategies that have the potential to improve the situation, namely
+domain specific tools and data enrichment. We close this paper by reasoning
+about the errors that are not detectable by any of the tools we tested." class="tooltip">Abstract
+&nbsp;<img src="img/arrow.png" width="13" height="13"  alt=""></a></div>
+
+                                </div>
+                                <div class="authors">Ziawasch Abedjan, Xu Chu,
+Dong Deng, Raul Castro Fernandez, Ihab F. Ilyas, Mourad Ouzzani, Paolo Papotti,
+Michael Stonebraker, Nan Tang </div>
+                                 <div class="description"> <p>
+42nd International Conference on Very Large DataBases (VLDB), 09/2016, New
+Delhi, India.</p>
+
+                                    <h6 class="place">VLDB</h6>
+                                </div>
+                            </div>
+                       </div>
+
+
 
                 <div class="row dates">
                     <div class="col-sm-4 border-date"> <h5 class="date">2017</h5> </div>
