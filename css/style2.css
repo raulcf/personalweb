@@ -3,28 +3,6 @@
     src: url(fonts/brandongrotesque-bold.ttf) format("truetype");
 }
 
-.summary-text {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #7f8c8d;
-  line-height: 30px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.research-text {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #7f8c8d;
-  line-height: 30px;
-  font-weight: 300;
-  text-align: left;
-}
-
-.conf {
-  color: black;
-  font-weight: bold: 
-}
 
 .dropdown-arrow-inverse {
   border-bottom-color: #34495e !important;
@@ -367,7 +345,6 @@ footer {
 }
 html,
 body {
-  padding-top: 50px;
   height: 100%;
 }
 body {
@@ -381,20 +358,9 @@ body {
     padding-left: 0;
   }
 }
-
-
-.list-header {
-  line-height: 10px;
-}
-
-/*li {
-  line-height: 10px;
-}*/
-
-.list-main-content {
+li {
   line-height: 20px;
 }
-
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -619,7 +585,6 @@ button:active {
 .navbar {
   left: 0;
   right: 0;
-  background-color: white;
 }
 .navbar .brand {
   padding: 23px 28px 24px 0;
@@ -896,7 +861,7 @@ section * {
  * Header 21 stylesheet  
  * */
 .header-21 {
-  /*position: relative;*/
+  position: relative;
   padding-top: 0;
   padding-bottom: 0;
   z-index: 100;
@@ -1738,12 +1703,11 @@ color: #2c3e50;
 }
 
 .date {
-  text-align: left;
+  text-align: center;
   font-family: "brandon-bold", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 19px;
-  /*color: #b2b2b2;*/
-  color:#2182aa;
+  color: #b2b2b2;
   border-bottom: 1px solid #b2b2b2;
   padding-bottom: 10px;
 }
