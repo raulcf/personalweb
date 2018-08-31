@@ -21,9 +21,9 @@
   text-align: left;
 }
 
-.conference {
-  /*color: black;*/
-  font-weight: bold: 
+.highlight {
+  font-weight: 500;
+  color: #2c3e50;
 }
 
 .dropdown-arrow-inverse {
@@ -129,6 +129,7 @@ p {
 
   line-height: 1.722169;
   /* 31px */
+  margin-bottom:0px;
 
 }
 .lead {
