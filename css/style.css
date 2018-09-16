@@ -9,7 +9,7 @@
   color: #7f8c8d;
   line-height: 30px;
   /*font-weight: 300;*/
-  text-align: center;
+  text-align: left;
 }
 
 .research-text {
@@ -1121,7 +1121,8 @@ section * {
   }
 
 .title {
-  margin-bottom: 40px !important;
+  margin-bottom: 10px !important;
+  margin-top: 20px;
   font-family: "brandon-bold", Helvetica, Arial, sans-serif;
 }
 
@@ -1761,6 +1762,15 @@ color: #2c3e50;
   color:#2182aa;
   border-bottom: 1px solid #b2b2b2;
   padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.smallfooter{
+  text-align: center;
+  font-size: 9px;
+  font-style: italic;
+  padding-bottom: 20px;
+  padding-top: 5px;
 }
 
 
